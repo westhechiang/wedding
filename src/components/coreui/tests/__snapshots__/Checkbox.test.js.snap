@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should match its empty snapshot 1`] = `
+<input
+  className="sc-bdVaJa cRadJj"
+  type="checkbox"
+/>
+`;

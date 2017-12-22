@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SidebarContainer /> should match its empty snapshot 1`] = `
+<div
+  className="sc-bdVaJa jEVwQu"
+/>
+`;
+
+exports[`<SidebarContainer /> should match its snapshot when passed a "height" prop 1`] = `
+<div
+  className="sc-bdVaJa dCWhYd"
+  height="50px"
+/>
+`;
+
+exports[`<SidebarContainer /> should match its snapshot when passed a "width" prop 1`] = `
+<div
+  className="sc-bdVaJa cvQtZk"
+  width="50px"
+/>
+`;

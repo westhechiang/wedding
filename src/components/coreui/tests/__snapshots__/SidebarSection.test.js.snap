@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SidebarSection /> should match its "fullWidth" snapshot 1`] = `
+<div
+  className="sc-bdVaJa czyqHW"
+  width="fullWidth"
+/>
+`;
+
+exports[`<SidebarSection /> should match its "inherit" snapshot 1`] = `
+<div
+  className="sc-bdVaJa koPwjx"
+  width="inherit"
+/>
+`;
+
+exports[`<SidebarSection /> should match its empty snapshot 1`] = `
+<div
+  className="sc-bdVaJa hUpMWE"
+/>
+`;
+
+exports[`<SidebarSection /> should match its snapshot when passed a "height" prop 1`] = `
+<div
+  className="sc-bdVaJa YYVmh"
+  height="50px"
+/>
+`;

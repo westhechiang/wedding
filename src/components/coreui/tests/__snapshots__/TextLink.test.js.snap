@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextLink /> should match its "base" size snapshot 1`] = `
+<a
+  className="sc-bdVaJa jngQPP"
+  size="base"
+/>
+`;
+
+exports[`<TextLink /> should match its "boldFont" hover effect snapshot 1`] = `
+<a
+  className="sc-bdVaJa lgNApY"
+/>
+`;
+
+exports[`<TextLink /> should match its "large" size snapshot 1`] = `
+<a
+  className="sc-bdVaJa ceLlWj"
+  size="large"
+/>
+`;
+
+exports[`<TextLink /> should match its "light" weight snapshot 1`] = `
+<a
+  className="sc-bdVaJa dbEpgK"
+/>
+`;
+
+exports[`<TextLink /> should match its "semiBold" weight snapshot 1`] = `
+<a
+  className="sc-bdVaJa gyFwkz"
+/>
+`;
+
+exports[`<TextLink /> should match its "small" size snapshot 1`] = `
+<a
+  className="sc-bdVaJa ezttOt"
+  size="small"
+/>
+`;
+
+exports[`<TextLink /> should match its "xsmall" size snapshot 1`] = `
+<a
+  className="sc-bdVaJa jvNczD"
+  size="xsmall"
+/>
+`;
+
+exports[`<TextLink /> should match its "xxsmall" size snapshot 1`] = `
+<a
+  className="sc-bdVaJa fCSmvd"
+  size="xxsmall"
+/>
+`;
+
+exports[`<TextLink /> should match its "xxxsmall" size snapshot 1`] = `
+<a
+  className="sc-bdVaJa eypxMo"
+  size="xxxsmall"
+/>
+`;
+
+exports[`<TextLink /> should match its empty snapshot 1`] = `
+<a
+  className="sc-bdVaJa hQXzYs"
+/>
+`;

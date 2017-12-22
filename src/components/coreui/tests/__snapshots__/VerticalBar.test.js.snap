@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VerticalBar /> should match its "xsmall" size snapshot 1`] = `
+<VerticalBar
+  className="sc-bdVaJa hOaGXn"
+  size="xsmall"
+/>
+`;
+
+exports[`<VerticalBar /> should match its "xxsmall" size snapshot 1`] = `
+<VerticalBar
+  className="sc-bdVaJa lnKfDf"
+  size="xxsmall"
+/>
+`;
+
+exports[`<VerticalBar /> should match its empty snapshot 1`] = `
+<VerticalBar
+  className="sc-bdVaJa dtmAum"
+/>
+`;

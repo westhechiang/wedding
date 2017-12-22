@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FlexContainer /> should match its "background" snapshot 1`] = `
+<div
+  className="sc-bdVaJa faWynt"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "borderBottom" snapshot 1`] = `
+<div
+  className="sc-bdVaJa bNzhoG"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "borderBottomLight" snapshot 1`] = `
+<div
+  className="sc-bdVaJa jEAfjK"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "borderTop" snapshot 1`] = `
+<div
+  className="sc-bdVaJa fBErXD"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "borderTopBottom" snapshot 1`] = `
+<div
+  className="sc-bdVaJa bMStuU"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "fullHeight" snapshot 1`] = `
+<div
+  className="sc-bdVaJa cjiCyE"
+  height="fullHeight"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "fullHeightMinusNav" snapshot 1`] = `
+<div
+  className="sc-bdVaJa jaIsYG"
+  height="fullHeightMinusNav"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "fullVhMinusNav" snapshot 1`] = `
+<div
+  className="sc-bdVaJa hxslny"
+  height="fullVhMinusNav"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "fullVhMinusRefineListFooter" snapshot 1`] = `
+<div
+  className="sc-bdVaJa ixpYRR"
+  height="fullVhMinusRefineListFooter"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "fullWidth" snapshot 1`] = `
+<div
+  className="sc-bdVaJa duKzwZ"
+  width="fullWidth"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "inherit" snapshot 1`] = `
+<div
+  className="sc-bdVaJa ioGJAa"
+  width="inherit"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "padAll" snapshot 1`] = `
+<div
+  className="sc-bdVaJa bdwHOc"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "padBottom" snapshot 1`] = `
+<div
+  className="sc-bdVaJa kXgZkd"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "padLeft" snapshot 1`] = `
+<div
+  className="sc-bdVaJa bhLxXO"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "padRight" snapshot 1`] = `
+<div
+  className="sc-bdVaJa dDRDob"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "padTop" snapshot 1`] = `
+<div
+  className="sc-bdVaJa ciLlrN"
+/>
+`;
+
+exports[`<FlexContainer /> should match its "padTopBottom" snapshot 1`] = `
+<div
+  className="sc-bdVaJa eIisyv"
+/>
+`;
+
+exports[`<FlexContainer /> should match its empty snapshot 1`] = `
+<div
+  className="sc-bdVaJa ehddzP"
+/>
+`;

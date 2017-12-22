@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> should match its "base" size snapshot 1`] = `
+<p
+  className="sc-bdVaJa gnUxiO"
+  size="base"
+/>
+`;
+
+exports[`<Text /> should match its "boldFont" hover effect snapshot 1`] = `
+<p
+  className="sc-bdVaJa iYihzc"
+/>
+`;
+
+exports[`<Text /> should match its "large" size snapshot 1`] = `
+<p
+  className="sc-bdVaJa MNbMg"
+  size="large"
+/>
+`;
+
+exports[`<Text /> should match its "light" weight snapshot 1`] = `
+<p
+  className="sc-bdVaJa fLOxNH"
+/>
+`;
+
+exports[`<Text /> should match its "semiBold" weight snapshot 1`] = `
+<p
+  className="sc-bdVaJa heNjIU"
+/>
+`;
+
+exports[`<Text /> should match its "small" size snapshot 1`] = `
+<p
+  className="sc-bdVaJa kFRbqC"
+  size="small"
+/>
+`;
+
+exports[`<Text /> should match its "xsmall" size snapshot 1`] = `
+<p
+  className="sc-bdVaJa brBLTk"
+  size="xsmall"
+/>
+`;
+
+exports[`<Text /> should match its "xxsmall" size snapshot 1`] = `
+<p
+  className="sc-bdVaJa iPuzfH"
+  size="xxsmall"
+/>
+`;
+
+exports[`<Text /> should match its "xxxsmall" size snapshot 1`] = `
+<p
+  className="sc-bdVaJa kTenKW"
+  size="xxxsmall"
+/>
+`;
+
+exports[`<Text /> should match its empty snapshot 1`] = `
+<p
+  className="sc-bdVaJa iVRnQM"
+/>
+`;
