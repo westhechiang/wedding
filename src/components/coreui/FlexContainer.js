@@ -23,15 +23,20 @@ const border = {
   borderAll: `border: 1px solid ${theme.color.grayExtraLight};`,
 };
 
-const background = (content, type, args) => {
-  const backgroundValue = content || 'transparent';
-  return isImage ?
-    `
+const background = (type, content) => {
+  const types = {
+    linear: `
+      background: ${content},
+    `,
+    image: `
       background-image: url(${content});
       background-size: 75px;
       background-repeat: repeat;
-    ` :
-    backgroundValue
+    `,
+    undefined: 'transprent',
+  };
+  console.log('types[type]', types[type]);
+  return types[type];
 };
 
 // FIXME: [WES] - heights should be removed and we should just pass in the exact
@@ -81,8 +86,7 @@ const FlexContainer = styled.div`
   transform: ${props => props.transform || 'none'};
   transition: ${props => props.transition || 'all 0s 0s ease'};
   ${props => border[props.border]}
-  ${props => background(props.background, props.backgroundType, props.backgroundArgs)}
-  background-color: ${props => theme.color[props.backgroundColor] || 'transparent'};
+  ${props => background(props.backgroundType, props.background)}
   flex-shrink: ${props => props.flexShrink || 1};
   align-self: ${props => (props.alignSelf || 'auto')};
   height: ${props => heights[props.height] || props.height};
