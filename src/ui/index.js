@@ -18,11 +18,16 @@ export const theme = {
   color: {
     white: '#ffffff',
     black: '#000000',
-    pink: '#E37562',
-    salmon: '#EAA995',
+    yellow: '#F6C98C',
+    gray: '#CFD1D3',
+    green: '#A8BBB9',
+    pink: '#F6D7D6',
+    blue: '#9AB6CC',
   },
   font: {
-    family: 'Arial, Helvetica, sans-serif',
+    family: {
+      pacifico: '"Pacifico", cursive',
+    },
     size: {
       xxxsmall: '10px',
       xxsmall: '12px',
@@ -33,7 +38,7 @@ export const theme = {
       large: '18px',
       xlarge: '22px',
       xxlarge: '26px',
-      xxxlarge: '35px',
+      xxxlarge: '100px',
     },
     weight: {
       thin: '100',

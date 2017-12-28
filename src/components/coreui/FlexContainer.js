@@ -13,16 +13,6 @@ const padding = {
   padAll: `${theme.gutter}`,
 };
 
-const border = {
-  borderBottomExtraExtraLight: `border-bottom: 1px solid ${theme.color.gray1};`,
-  borderBottomLight: `border-bottom: 1px solid ${theme.color.grayExtraLight};`,
-  borderBottom: `border-bottom: 1px solid ${theme.color.grayExtraDark};`,
-  borderTop: `border-top: 1px solid ${theme.color.gray};`,
-  borderTopExtraExtraLightGray: `border-top: 1px solid ${theme.color.gray1};`,
-  borderTopBottom: `border-top: 1px solid ${theme.color.gray}; border-bottom: 1px solid ${theme.color.grayExtraDark};`,
-  borderAll: `border: 1px solid ${theme.color.grayExtraLight};`,
-};
-
 const background = (type, content) => {
   const types = {
     linear: `
@@ -30,12 +20,11 @@ const background = (type, content) => {
     `,
     image: `
       background-image: url(${content});
-      background-size: 75px;
-      background-repeat: repeat;
+      background-size: cover;
+      background-repeat: no-repeat;
     `,
     undefined: 'transprent',
   };
-  console.log('types[type]', types[type]);
   return types[type];
 };
 
@@ -85,7 +74,7 @@ const FlexContainer = styled.div`
   z-index: ${props => props.zIndex || 'auto'};
   transform: ${props => props.transform || 'none'};
   transition: ${props => props.transition || 'all 0s 0s ease'};
-  ${props => border[props.border]}
+  border: ${props => props.border || 'none'};
   ${props => background(props.backgroundType, props.background)}
   flex-shrink: ${props => props.flexShrink || 1};
   align-self: ${props => (props.alignSelf || 'auto')};

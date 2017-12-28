@@ -10,7 +10,7 @@ const Text = styled.p`
   -moz-osx-font-smoothing: grayscale;
   color: ${props => theme.color[props.color]};
   font-size: ${props => theme.font.size[props.size] || theme.font.size.default};
-  font-family: ${theme.font.family};
+  font-family: ${props => theme.font.family[props.family] || 'Helvetica, Arial, sans-serif'};
   font-weight: ${props => theme.font.weight[props.weight] || 'normal'};
   line-height: ${props => props.lineHeight || theme.font[props.size]};
   text-indent: ${props => props.textIndent};
@@ -26,6 +26,7 @@ const Text = styled.p`
   flex-wrap: ${props => props.flexWrap || 'auto'};
   display: ${props => props.display || 'inline'};
   opacity: ${props => props.opacity || '1'};
+  transition: ${props => props.transition || 'all 0s 0s ease'};
   ${props => hoverEffects[props.hover]}
 `;
 
