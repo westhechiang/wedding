@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<ItemSpacer /> should match its empty snapshot 1`] = `
-<div
-  className="sc-bdVaJa jlOtIu"
-/>
-`;

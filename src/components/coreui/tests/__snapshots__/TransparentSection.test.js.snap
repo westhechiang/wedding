@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<TransparentSection /> should match its empty snapshot 1`] = `
-<div
-  className="sc-bdVaJa dMDMzx"
-/>
-`;

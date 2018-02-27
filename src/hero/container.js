@@ -1,18 +1,23 @@
 import React from 'react';
+import {
+  Flex,
+} from 'styled-grid';
+import {
+  ExtendedFlex,
+} from 'www-coreui';
 
-import FlexContainer from '../components/coreui/FlexContainer';
-import Text from '../components/coreui/Text';
-import Image from '../components/coreui/Image';
+// import DateDisplay from './components/DateDisplay';
+import PineappleDisplay from './components/PineappleDisplay';
+// import LocationDisplay from './components/LocationDisplay';
 
-import Pineapple from '../assets/images/pineapple_hero_2.png';
-
-import { theme } from '../ui/index';
+import VerticalItemSpacer from '../components/coreui/VerticalItemSpacer';
+import StyledFA from '../components/coreui/StyledFA';
 
 class Hero extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [
+      pineappleDisplayData: [
         {
           id: 0,
           pos1: {
@@ -50,17 +55,20 @@ class Hero extends React.Component {
           },
         },
       ],
+      dateData: [
+        '11', '10', '18',
+      ]
     };
     this.timer = null;
   }
 
   componentDidMount() {
-    this.timer = this.state.data.map(
+    this.timer = this.state.pineappleDisplayData.map(
       (row, index) => {
         setTimeout(
           () => {
             const newState = { ...this.state };
-            newState.data[index].pos2.opacity = '1';
+            newState.pineappleDisplayData[index].pos2.opacity = '1';
             this.setState(newState);
           }, row.pos2.timer
         )
@@ -76,58 +84,39 @@ class Hero extends React.Component {
       );
     `;
 
-    const { data } = this.state;
+    const {
+      pineappleDisplayData,
+      dateData,
+      } = this.state;
 
     return (
-      <FlexContainer
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        backgroundColor="white"
+      <Flex
+        flexDirection="row"
+        align="center"
+        justify="space-between"
+        bg="yellow"
         position="relative"
         height="100vh"
         width="100%"
       >
-        <Image
-          src={Pineapple}
-          position="absolute"
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -50%)"
+        <PineappleDisplay
+          data={pineappleDisplayData}
         />
-        <FlexContainer
-          height="700px"
-          flexDirection="column"
-          justifyContent="flex-end"
+        <ExtendedFlex
+          position="absolute"
+          width={1}
+          bottom="0"
+          height="100px"
+          justify="center"
+          align="center"
         >
-          {
-            data.map(
-              row => (
-                <FlexContainer key={row.id}>
-                  <Text
-                    size="xxxlarge"
-                    color="white"
-                    family="pacifico"
-                    lineHeight="98px"
-                  >
-                    {row.pos1.value}
-                  </Text>
-                  <Text
-                    size="xxxlarge"
-                    color="white"
-                    family="pacifico"
-                    opacity={row.pos2.opacity}
-                    transition="opacity 1s linear"
-                    lineHeight="98px"
-                  >
-                    {row.pos2.value}
-                  </Text>
-                </FlexContainer>
-              )
-            )
-          }
-        </FlexContainer>
-      </FlexContainer>
+          <StyledFA
+            name="caret-down"
+            size="4x"
+            color="white"
+          />
+        </ExtendedFlex>
+      </Flex>
     )
   }
 
