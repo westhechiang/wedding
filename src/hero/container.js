@@ -10,9 +10,6 @@ import {
 import PineappleDisplay from './components/PineappleDisplay';
 // import LocationDisplay from './components/LocationDisplay';
 
-import VerticalItemSpacer from '../components/coreui/VerticalItemSpacer';
-import StyledFA from '../components/coreui/StyledFA';
-
 class Hero extends React.Component {
   constructor(props) {
     super(props);
@@ -65,58 +62,34 @@ class Hero extends React.Component {
   componentDidMount() {
     this.timer = this.state.pineappleDisplayData.map(
       (row, index) => {
-        setTimeout(
+        return setTimeout(
           () => {
             const newState = { ...this.state };
             newState.pineappleDisplayData[index].pos2.opacity = '1';
             this.setState(newState);
           }, row.pos2.timer
-        )
+        );
       }
     );
   }
 
   render() {
-    const gradient =`
-      linear-gradient(
-        ${theme.color.pink} 35%,
-        ${theme.color.salmon} 100%
-      );
-    `;
-
     const {
       pineappleDisplayData,
-      dateData,
-      } = this.state;
+      // dateData,
+    } = this.state;
 
     return (
-      <Flex
+      <ExtendedFlex
         flexDirection="row"
         align="center"
         justify="space-between"
         bg="yellow"
         position="relative"
         height="100vh"
-        width="100%"
+        width={1}
       >
-        <PineappleDisplay
-          data={pineappleDisplayData}
-        />
-        <ExtendedFlex
-          position="absolute"
-          width={1}
-          bottom="0"
-          height="100px"
-          justify="center"
-          align="center"
-        >
-          <StyledFA
-            name="caret-down"
-            size="4x"
-            color="white"
-          />
-        </ExtendedFlex>
-      </Flex>
+      </ExtendedFlex>
     )
   }
 

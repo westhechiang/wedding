@@ -12,19 +12,17 @@ import Hero from './hero/container';
 // import LocationTime from './locationTime/container';
 
 
-class App extends React.Component {
-  render() {
-    return (
-      <ThemeProvider theme={Theme}>
-        <Flex
-          flexDirection="column"
-          width="100%"
-        >
-          <Hero />
-        </Flex>
-      </ThemeProvider>
-    );
-  }
+const App = () =>{
+  return (
+    <ThemeProvider theme={Theme}>
+      <Flex
+        flexDirection="column"
+        width="100%"
+      >
+        <Hero />
+      </Flex>
+    </ThemeProvider>
+  );
 }
 
 export default App;
