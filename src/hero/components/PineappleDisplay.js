@@ -38,7 +38,7 @@ const PineappleDisplay = ({
       >
         {
           data.map(
-            row => {
+            (row) => {
               return (
                 <Flex key={row.id}>
                   <Text
@@ -52,14 +52,14 @@ const PineappleDisplay = ({
                     {row.pos2.value}
                   </Text>
                 </Flex>
-              )
-            }
+              );
+            },
           )
         }
       </ExtendedFlex>
     </ExtendedFlex>
   );
-}
+};
 
 PineappleDisplay.propTypes = {
   data: PropTypes.array,

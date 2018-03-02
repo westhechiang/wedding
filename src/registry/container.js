@@ -17,9 +17,8 @@ class Registry extends React.Component {
           Registry
         </Text>
       </FlexContainer>
-    )
+    );
   }
-
 }
 
 export default Registry;

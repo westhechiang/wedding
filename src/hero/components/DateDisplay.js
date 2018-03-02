@@ -23,7 +23,7 @@ const DateDisplay = ({ data }) => {
       >
         {
           data.map(
-            (date) => (
+            date => (
               <VerticalItemSpacer
                 borderWidth="0 0 2px 0"
                 borderColor="white"
@@ -39,13 +39,13 @@ const DateDisplay = ({ data }) => {
                   { date }
                 </Text>
               </VerticalItemSpacer>
-            )
+            ),
           )
         }
       </FlexContainer>
     </FlexContainer>
   );
-}
+};
 
 DateDisplay.propTypes = {
   data: PropTypes.array,

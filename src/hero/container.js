@@ -1,13 +1,10 @@
 import React from 'react';
 import {
-  Flex,
-} from 'styled-grid';
-import {
   ExtendedFlex,
 } from 'www-coreui';
 
 // import DateDisplay from './components/DateDisplay';
-import PineappleDisplay from './components/PineappleDisplay';
+// import PineappleDisplay from './components/PineappleDisplay';
 // import LocationDisplay from './components/LocationDisplay';
 
 class Hero extends React.Component {
@@ -54,7 +51,7 @@ class Hero extends React.Component {
       ],
       dateData: [
         '11', '10', '18',
-      ]
+      ],
     };
     this.timer = null;
   }
@@ -67,17 +64,17 @@ class Hero extends React.Component {
             const newState = { ...this.state };
             newState.pineappleDisplayData[index].pos2.opacity = '1';
             this.setState(newState);
-          }, row.pos2.timer
+          }, row.pos2.timer,
         );
-      }
+      },
     );
   }
 
   render() {
-    const {
-      pineappleDisplayData,
-      // dateData,
-    } = this.state;
+    // const {
+    //   // pineappleDisplayData,
+    //   // dateData,
+    // } = this.state;
 
     return (
       <ExtendedFlex
@@ -88,11 +85,9 @@ class Hero extends React.Component {
         position="relative"
         height="100vh"
         width={1}
-      >
-      </ExtendedFlex>
-    )
+      />
+    );
   }
-
 }
 
 export default Hero;

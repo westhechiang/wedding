@@ -27,6 +27,6 @@ const LocationDisplay = () => {
       </Text>
     </FlexContainer>
   );
-}
+};
 
 export default LocationDisplay;

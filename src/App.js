@@ -2,7 +2,7 @@ import React from 'react';
 import {
   ThemeProvider,
 } from 'styled-components';
-import { Theme } from 'www-coreui'
+import { Theme } from 'www-coreui';
 import {
   Flex,
 } from 'grid-styled';
@@ -12,7 +12,7 @@ import Hero from './hero/container';
 // import LocationTime from './locationTime/container';
 
 
-const App = () =>{
+const App = () => {
   return (
     <ThemeProvider theme={Theme}>
       <Flex
@@ -23,6 +23,6 @@ const App = () =>{
       </Flex>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
