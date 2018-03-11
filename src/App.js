@@ -8,8 +8,9 @@ import {
 } from 'grid-styled';
 
 import Hero from './hero/container';
-// import Registry from './registry/container';
-// import LocationTime from './locationTime/container';
+import LocationTime from './locationTime/container';
+import Registry from './registry/container';
+import Oreo from './oreo/container';
 
 
 const App = () => {
@@ -20,6 +21,9 @@ const App = () => {
         width="100%"
       >
         <Hero />
+        <LocationTime />
+        <Registry />
+        <Oreo />
       </Flex>
     </ThemeProvider>
   );

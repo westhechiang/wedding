@@ -1,91 +1,84 @@
 import React from 'react';
 import {
+  ExtendedBox,
   ExtendedFlex,
+  Background,
+  Text,
 } from 'www-coreui';
 
-// import DateDisplay from './components/DateDisplay';
-// import PineappleDisplay from './components/PineappleDisplay';
-// import LocationDisplay from './components/LocationDisplay';
+import {
+  Box,
+} from 'grid-styled';
+
+import bgImage from '../assets/images/floral_bg_sm.jpg';
 
 class Hero extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      pineappleDisplayData: [
-        {
-          id: 0,
-          pos1: {
-            value: 'W',
-            opacity: '0',
-          },
-          pos2: {
-            value: 'en',
-            opacity: '0',
-            timer: 1500,
-          },
-        },
-        {
-          id: 1,
-          pos1: {
-            value: 'W',
-            opacity: '0',
-          },
-          pos2: {
-            value: 'es',
-            opacity: '0',
-            timer: 2500,
-          },
-        },
-        {
-          id: 2,
-          pos1: {
-            value: 'W',
-            opacity: '0',
-          },
-          pos2: {
-            value: 'ed',
-            opacity: '0',
-            timer: 3500,
-          },
-        },
-      ],
-      dateData: [
-        '11', '10', '18',
-      ],
-    };
-    this.timer = null;
-  }
-
-  componentDidMount() {
-    this.timer = this.state.pineappleDisplayData.map(
-      (row, index) => {
-        return setTimeout(
-          () => {
-            const newState = { ...this.state };
-            newState.pineappleDisplayData[index].pos2.opacity = '1';
-            this.setState(newState);
-          }, row.pos2.timer,
-        );
-      },
-    );
+    this.state = {};
   }
 
   render() {
-    // const {
-    //   // pineappleDisplayData,
-    //   // dateData,
-    // } = this.state;
-
     return (
-      <ExtendedFlex
-        flexDirection="row"
-        align="center"
-        justify="space-between"
-        bg="yellow"
-        position="relative"
+      <ExtendedBox
+        bg="black"
         height="100vh"
         width={1}
-      />
+      >
+        <Background
+          content={bgImage}
+          backgroundSize="25%"
+          filter="brightness(0.8)"
+        >
+          <ExtendedFlex
+            flexDirection="column"
+            w={1}
+            height="100%"
+            justify="center"
+            align="center"
+          >
+            <Box>
+              <Text
+                fontSize={[60, 5, 128]}
+                fontFamily="monoton"
+                m={0}
+                display="block"
+                color="white"
+                animation="neonPink 1.5s ease-in-out infinite alternate"
+                animatedNeon="neonPink"
+              >
+                Wen
+              </Text>
+            </Box>
+            <Box>
+              <Text
+                fontSize={[60, 5, 128]}
+                fontFamily="monoton"
+                m={0}
+                display="block"
+                color="white"
+                animation="neonPink 1.5s ease-in-out infinite alternate"
+                animatedNeon="neonPink"
+              >
+                Wes
+              </Text>
+            </Box>
+            <Box>
+              <Text
+                fontFamily="monoton"
+                fontSize={[60, 5, 128]}
+                m={0}
+                display="block"
+                color="white"
+                animation="neonWhite 0.5s ease-in-out infinite alternate"
+                animatedNeon="neonWhite"
+              >
+                Wed
+              </Text>
+            </Box>
+          </ExtendedFlex>
+        </Background>
+      </ExtendedBox>
     );
   }
 }

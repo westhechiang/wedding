@@ -1,8 +1,9 @@
 import React from 'react';
-
-import FlexContainer from '../components/coreui/FlexContainer';
-import Text from '../components/coreui/Text';
-import VerticalItemSpacer from '../components/coreui/VerticalItemSpacer';
+import {
+  ExtendedBox,
+  ExtendedFlex,
+  Text,
+} from 'www-coreui';
 
 class LocationTime extends React.Component {
   constructor(props) {
@@ -12,88 +13,96 @@ class LocationTime extends React.Component {
 
   render() {
     return (
-      <FlexContainer
-        flexDirection="row"
-        alignItems="center"
-        justifyContent="center"
-        backgroundColor="blue"
-        position="relative"
-        height="100vh"
-        width="100%"
+      <ExtendedBox
+        py={[40, 80]}
+        px={[20, 40]}
+        bg="#F6F2E8"
+        height={['100vh', '50vh']}
       >
-        <FlexContainer
-          width="40%"
-          padding="padAll"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="flex-start"
+        <ExtendedFlex
+          justify="center"
+          align="center"
+          flexDirection={['column', 'row']}
+          w={1}
+          height={['100vh', '50vh']}
         >
-          <VerticalItemSpacer>
+          <ExtendedFlex
+            w={[1, 0.5]}
+            pr={10}
+            py={10}
+            justify="center"
+            flexDirection="column"
+          >
             <Text
-              size="default"
+              display="block"
+              textAlign="center"
+              fontFamily="comfortaa"
+              fontSize={[12, 14]}
+              m={0}
             >
-              WHEN:
+              on
             </Text>
-          </VerticalItemSpacer>
-          <VerticalItemSpacer>
             <Text
-              size="xxlarge"
+              display="block"
+              textAlign="center"
+              fontFamily="comfortaa"
+              fontSize={[24, 36]}
+              m={0}
+              pt={10}
             >
-              Saturday,
+              November 10th
             </Text>
-          </VerticalItemSpacer>
-          <VerticalItemSpacer>
             <Text
-              size="xxlarge"
-            >
-              November 11
-            </Text>
-          </VerticalItemSpacer>
-          <VerticalItemSpacer>
-            <Text
-              size="xxlarge"
+              display="block"
+              textAlign="center"
+              fontFamily="comfortaa"
+              fontSize={[24, 36]}
+              m={0}
+              pt={10}
             >
               2018
             </Text>
-          </VerticalItemSpacer>
-        </FlexContainer>
-
-        <FlexContainer
-          padding="padAll"
-          flexDirection="column"
-          justifyContent="center"
-          alignItems="flex-start"
-        >
-          <VerticalItemSpacer>
+          </ExtendedFlex>
+          <ExtendedFlex
+            w={[1, 0.5]}
+            pl={10}
+            pt={[100, 10]}
+            pb={10}
+            justify="center"
+            flexDirection="column"
+          >
             <Text
-              size="default"
+              display="block"
+              textAlign="center"
+              fontFamily="comfortaa"
+              fontSize={[12, 14]}
+              m={0}
             >
-              WHERE:
+              in
             </Text>
-          </VerticalItemSpacer>
-          <VerticalItemSpacer>
             <Text
-              size="xxlarge"
+              display="block"
+              textAlign="center"
+              fontFamily="comfortaa"
+              fontSize={[24, 36]}
+              m={0}
+              pt={10}
             >
-              82950 61st Ave.
+              Palm Springs
             </Text>
-          </VerticalItemSpacer>
-          <VerticalItemSpacer>
             <Text
-              size="xxlarge"
+              display="block"
+              textAlign="center"
+              fontFamily="comfortaa"
+              fontSize={[24, 36]}
+              m={0}
+              pt={10}
             >
-              Thermal, CA
+              CA
             </Text>
-          </VerticalItemSpacer>
-          <VerticalItemSpacer>
-            <Text
-              size="xxlarge"
-            >
-              92274
-            </Text>
-          </VerticalItemSpacer>
-        </FlexContainer>
-      </FlexContainer>
+          </ExtendedFlex>
+        </ExtendedFlex>
+      </ExtendedBox>
     );
   }
 }
