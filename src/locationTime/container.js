@@ -14,7 +14,6 @@ class LocationTime extends React.Component {
   render() {
     return (
       <ExtendedBox
-        py={[40, 80]}
         px={[20, 40]}
         bg="#F6F2E8"
         height={['100vh', '50vh']}
@@ -29,7 +28,7 @@ class LocationTime extends React.Component {
           <ExtendedFlex
             w={[1, 0.5]}
             pr={10}
-            py={10}
+            py={[100, 10]}
             justify="center"
             flexDirection="column"
           >
@@ -63,11 +62,15 @@ class LocationTime extends React.Component {
               2018
             </Text>
           </ExtendedFlex>
+          <ExtendedBox
+            w={[0.8, '1px']}
+            bg="black"
+            height={['1px', '200px']}
+          />
           <ExtendedFlex
             w={[1, 0.5]}
             pl={10}
-            pt={[100, 10]}
-            pb={10}
+            py={[100, 10]}
             justify="center"
             flexDirection="column"
           >
