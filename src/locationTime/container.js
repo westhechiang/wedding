@@ -3,7 +3,10 @@ import {
   ExtendedBox,
   ExtendedFlex,
   Text,
+  Image,
 } from 'www-coreui';
+import calendarIcon from '../assets/images/calendar-icon.svg';
+import mapIcon from '../assets/images/map-icon.svg';
 
 class LocationTime extends React.Component {
   constructor(props) {
@@ -15,15 +18,27 @@ class LocationTime extends React.Component {
     return (
       <ExtendedBox
         px={[20, 40]}
-        bg="#F6F2E8"
-        height={['100vh', '50vh']}
+        bg="#050A1D"
+        height={['100vh']}
       >
+        <Text
+          pt={[20, 80]}
+          pb={[20, 60]}
+          display="block"
+          textAlign="center"
+          fontFamily="poiretOne"
+          fontSize={[24, 78]}
+          m={0}
+          color="#BA9991"
+        >
+          We&#39;re getting married!
+        </Text>
         <ExtendedFlex
           justify="center"
           align="center"
           flexDirection={['column', 'row']}
           w={1}
-          height={['100vh', '50vh']}
+          height={['60vh']}
         >
           <ExtendedFlex
             w={[1, 0.5]}
@@ -32,21 +47,14 @@ class LocationTime extends React.Component {
             justify="center"
             flexDirection="column"
           >
+            <Image w={30} src={calendarIcon} />
             <Text
               display="block"
               textAlign="center"
-              fontFamily="comfortaa"
-              fontSize={[12, 14]}
+              fontFamily="poiretOne"
+              fontSize={[24, 78]}
               m={0}
-            >
-              on
-            </Text>
-            <Text
-              display="block"
-              textAlign="center"
-              fontFamily="comfortaa"
-              fontSize={[24, 36]}
-              m={0}
+              color="#BA9991"
               pt={10}
             >
               November 10th
@@ -54,8 +62,9 @@ class LocationTime extends React.Component {
             <Text
               display="block"
               textAlign="center"
-              fontFamily="comfortaa"
-              fontSize={[24, 36]}
+              fontFamily="poiretOne"
+              fontSize={[24, 78]}
+              color="#BA9991"
               m={0}
               pt={10}
             >
@@ -64,8 +73,8 @@ class LocationTime extends React.Component {
           </ExtendedFlex>
           <ExtendedBox
             w={[0.8, '1px']}
-            bg="black"
-            height={['1px', '200px']}
+            bg="#BA9991"
+            height={['1px', '300px']}
           />
           <ExtendedFlex
             w={[1, 0.5]}
@@ -74,20 +83,13 @@ class LocationTime extends React.Component {
             justify="center"
             flexDirection="column"
           >
+            <Image w={30} src={mapIcon} />
             <Text
               display="block"
               textAlign="center"
-              fontFamily="comfortaa"
-              fontSize={[12, 14]}
-              m={0}
-            >
-              in
-            </Text>
-            <Text
-              display="block"
-              textAlign="center"
-              fontFamily="comfortaa"
-              fontSize={[24, 36]}
+              color="#BA9991"
+              fontFamily="poiretOne"
+              fontSize={[24, 78]}
               m={0}
               pt={10}
             >
@@ -96,8 +98,9 @@ class LocationTime extends React.Component {
             <Text
               display="block"
               textAlign="center"
-              fontFamily="comfortaa"
-              fontSize={[24, 36]}
+              fontFamily="poiretOne"
+              color="#BA9991"
+              fontSize={[24, 78]}
               m={0}
               pt={10}
             >

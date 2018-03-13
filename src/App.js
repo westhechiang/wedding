@@ -9,7 +9,7 @@ import {
 
 import Hero from './hero/container';
 import LocationTime from './locationTime/container';
-import Registry from './registry/container';
+import Rsvp from './rsvp/container';
 import Oreo from './oreo/container';
 
 
@@ -22,7 +22,7 @@ const App = () => {
       >
         <Hero />
         <LocationTime />
-        <Registry />
+        <Rsvp />
         <Oreo />
       </Flex>
     </ThemeProvider>
