@@ -22,12 +22,12 @@ class LocationTime extends React.Component {
         height={['100vh']}
       >
         <Text
-          pt={[20, 80]}
+          pt={80}
           pb={[20, 60]}
           display="block"
           textAlign="center"
           fontFamily="poiretOne"
-          fontSize={[24, 78]}
+          fontSize={[24, 51, 78]}
           m={0}
           color="#BA9991"
         >
@@ -38,21 +38,26 @@ class LocationTime extends React.Component {
           align="center"
           flexDirection={['column', 'row']}
           w={1}
-          height={['60vh']}
+          height="60%"
         >
           <ExtendedFlex
             w={[1, 0.5]}
-            pr={10}
-            py={[100, 10]}
+            pr={[0, 10]}
+            py={[10, 10]}
             justify="center"
+            align="center"
             flexDirection="column"
           >
-            <Image w={30} src={calendarIcon} />
+            <Image
+              w={30}
+              src={calendarIcon}
+              pb={20}
+            />
             <Text
               display="block"
               textAlign="center"
               fontFamily="poiretOne"
-              fontSize={[24, 78]}
+              fontSize={[24, 51, 78]}
               m={0}
               color="#BA9991"
               pt={10}
@@ -63,7 +68,7 @@ class LocationTime extends React.Component {
               display="block"
               textAlign="center"
               fontFamily="poiretOne"
-              fontSize={[24, 78]}
+              fontSize={[24, 51, 78]}
               color="#BA9991"
               m={0}
               pt={10}
@@ -71,25 +76,33 @@ class LocationTime extends React.Component {
               2018
             </Text>
           </ExtendedFlex>
+
           <ExtendedBox
             w={[0.8, '1px']}
+            my={[80, 20]}
             bg="#BA9991"
             height={['1px', '300px']}
           />
+
           <ExtendedFlex
             w={[1, 0.5]}
-            pl={10}
-            py={[100, 10]}
+            pl={[0, 10]}
+            py={[10, 10]}
             justify="center"
+            align="center"
             flexDirection="column"
           >
-            <Image w={30} src={mapIcon} />
+            <Image
+              w={30}
+              pb={20}
+              src={mapIcon}
+            />
             <Text
               display="block"
               textAlign="center"
               color="#BA9991"
               fontFamily="poiretOne"
-              fontSize={[24, 78]}
+              fontSize={[24, 51, 78]}
               m={0}
               pt={10}
             >
@@ -100,7 +113,7 @@ class LocationTime extends React.Component {
               textAlign="center"
               fontFamily="poiretOne"
               color="#BA9991"
-              fontSize={[24, 78]}
+              fontSize={[24, 51, 78]}
               m={0}
               pt={10}
             >
