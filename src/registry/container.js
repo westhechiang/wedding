@@ -7,7 +7,7 @@ import {
   TextLink,
 } from 'www-coreui';
 
-import bgImage from '../assets/images/string_lights_blurred.jpg';
+import bgImage from '../assets/images/palms.jpg';
 import stellaImage from '../assets/images/swept.jpg';
 
 class Registry extends React.Component {
@@ -44,11 +44,11 @@ class Registry extends React.Component {
             >
               <TextLink
                 width={[300, 300, 400]}
-                bg="white"
-                color="black"
+                color="white"
                 transition="0.5s ease-in-out background-color, 0.5s ease-in-out color"
                 hoverBackgroundColor="white"
-                hoverColor="#D9EDEE"
+                backgroundColor="transparent"
+                hoverColor="black"
                 border={2}
                 borderColor="white"
                 borderRadius={0}

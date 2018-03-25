@@ -27,7 +27,7 @@ class Hero extends React.Component {
       >
         <Background
           content={bgImage}
-          backgroundSize="25%"
+          backgroundSize="50%"
           filter="brightness(0.8)"
         >
           <ExtendedFlex
