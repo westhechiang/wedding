@@ -7,7 +7,7 @@ import {
   TextLink,
 } from 'www-coreui';
 
-import bgImage from '../assets/images/presents_pattern.jpg';
+import bgImage from '../assets/images/string_lights_blurred.jpg';
 import stellaImage from '../assets/images/swept.jpg';
 
 class Registry extends React.Component {
@@ -32,7 +32,7 @@ class Registry extends React.Component {
         >
           <Background
             content={bgImage}
-            backgroundSize="25%"
+            backgroundSize="cover"
           >
             <ExtendedFlex
               w={[1, 0.7]}
