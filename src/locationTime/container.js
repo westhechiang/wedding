@@ -50,7 +50,7 @@ class LocationTime extends React.Component {
             flexDirection="column"
           >
             <a
-              href="https://www.google.com/calendar/render?action=TEMPLATE&text=WenWesWed&dates=20181110T150000/20181110T235900&ctz=America/Los_Angeles&details=For+details,+link+here:+http://www.wenweswed.com&location=82950+61st.+Ave.,+Vista+Aanta+Rosa+CA+92274&sf=true&output=xml"
+              href="https://www.google.com/calendar/render?action=TEMPLATE&text=WenWesWed&dates=20181110T150000/20181110T235900&ctz=America/Los_Angeles&details=For+details,+link+here:+http://www.wenweswed.com&location=82950+61st.+Ave.,+Vista+Santa+Rosa+CA+92274&sf=true&output=xml"
               target="_blank"
               rel="noopener noreferrer"
             >

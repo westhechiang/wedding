@@ -21,29 +21,29 @@ class Registry extends React.Component {
       <ExtendedFlex
         w={1}
         flexDirection={['column-reverse', 'column-reverse', 'row']}
-        height={['auto', '100vh']}
+        height={['auto', 'auto', '100vh']}
         justify="center"
         align="center"
         bg="white"
       >
         <ExtendedBox
-          w={[1, 0.7]}
-          height={[400, '80vh']}
+          w={[1, 1, 0.7]}
+          height={[400, 400, '80vh']}
         >
           <Background
             content={bgImage}
             backgroundSize="cover"
           >
             <ExtendedFlex
-              w={[1, 0.7]}
-              height={[400, '80vh']}
+              w={[1, 1, 0.7]}
+              height={[400, 400, '80vh']}
               justify="center"
               align="center"
               flexDirection="column"
               position="relative"
             >
               <TextLink
-                width={[300, 400]}
+                width={[300, 300, 400]}
                 bg="white"
                 color="black"
                 transition="0.5s ease-in-out background-color, 0.5s ease-in-out color"
@@ -52,10 +52,10 @@ class Registry extends React.Component {
                 border={2}
                 borderColor="white"
                 borderRadius={0}
-                p={[10, 20]}
+                p={[10, 10, 20]}
                 fontSize={24}
                 fontWeight={300}
-                href="http://wenweswed.rsvpify.com"
+                href="https://www.myregistry.com/giftlist/wenweswed"
                 target="_blank"
               >
                 Registry
@@ -64,18 +64,18 @@ class Registry extends React.Component {
           </Background>
         </ExtendedBox>
         <ExtendedFlex
-          w={[1, 0.3]}
-          height={['auto', '100vh']}
+          w={[1, 1, 0.3]}
+          height={['auto', 'auto', '100vh']}
           justify="center"
           position="relative"
           align="center"
         >
           <Image
             src={stellaImage}
-            w={[1, 600]}
-            position={['static', 'absolute']}
+            w={[1, 1, 600]}
+            position={['static', 'static', 'absolute']}
             left="-200px"
-            border={[0, '20px solid white']}
+            border={[0, 0, '20px solid white']}
           />
         </ExtendedFlex>
       </ExtendedFlex>
