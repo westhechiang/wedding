@@ -7624,7 +7624,7 @@ styled-grid@^1.0.0-beta.1:
   dependencies:
     styled-components "^1.0.0"
 
-"styled-system@>=1.1 || >=2.0", styled-system@>=2.0.2, styled-system@^2.0.0, styled-system@^2.1.1:
+"styled-system@>=1.1 || >=2.0", styled-system@>=2.0.2, styled-system@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-2.1.1.tgz#ec7cd9c25f8413662c90a3ff1b6660cf8d744163"
   dependencies:

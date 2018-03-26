@@ -1,14 +1,12 @@
 import React from 'react';
 import {
-  ExtendedFlex,
   ExtendedBox,
-  Image,
-  Background,
+  ExtendedFlex,
   Text,
   TextLink,
 } from 'www-coreui';
 
-import leaves from '../assets/images/leaves.png';
+import celebrate from '../assets/images/celebrate.png';
 import bgImage from '../assets/images/cops_and_robbers1.jpg';
 
 class Rsvp extends React.Component {
@@ -23,74 +21,66 @@ class Rsvp extends React.Component {
         w={1}
         flexDirection={['column', 'column', 'row']}
         height={['auto', 'auto', '100vh']}
-        justify="center"
-        align="center"
-        bg="white"
+        bgImage={celebrate}
+        bgSize="cover"
+        py={[80, 40, 0]}
       >
         <ExtendedFlex
-          w={[1, 1, 0.3]}
-          height={['auto', 'auto', '100vh']}
+          w={1}
           justify="center"
-          position="relative"
           align="center"
         >
-          <Image
-            src={bgImage}
-            w={[1, 1, 600]}
-            position={['static', 'static', 'absolute']}
-            right="-200px"
-            border={[0, 0, '20px solid white']}
+          <ExtendedBox
+            w={[300, 400, 600]}
+            height={[300, 400, 600]}
+            border={3}
+            borderRadius={4}
+            bgImage={bgImage}
+            boxShadow={0}
+            bgSize="cover"
+            bgPosition="20%"
+            borderColor="white"
+            overflowX="hidden"
+            overflowY="hidden"
           />
         </ExtendedFlex>
-        <ExtendedBox
-          w={[1, 1, 0.7]}
-          height={[400, 400, '80vh']}
+        <ExtendedFlex
+          w={1}
+          height={[400, 400, '100vh']}
+          flexDirection="column"
+          justify="center"
+          align={['center', 'center', 'flex-start']}
         >
-          <Background
-            content={leaves}
-            backgroundSize="cover"
+          <Text
+            color="blue.1"
+            fontFamily="poiretOne"
+            fontWeight={[900]}
+            fontSize={[5, 6, 7]}
+            m={0}
+            mb={[40, 40, 60]}
           >
-            <ExtendedFlex
-              w={[1, 1, 0.7]}
-              height={[400, 400, '80vh']}
-              justify="center"
-              align="center"
-              flexDirection="column"
-              position="relative"
-            >
-              <Text
-                w={[1, 1, 0.4]}
-                display="block"
-                textAlign="center"
-                color="white"
-                fontFamily="poiretOne"
-                fontSize={[5, 6, 7]}
-                m={0}
-                mb={[40, 40, 60]}
-              >
-                  Come celebrate with us!
-              </Text>
-              <TextLink
-                width={[300, 300, 400]}
-                backgroundColor="transparent"
-                color="white"
-                transition="0.5s ease-in-out background-color, 0.5s ease-in-out color"
-                hoverBackgroundColor="white"
-                hoverColor="#F6C98C"
-                border={2}
-                borderColor="white"
-                borderRadius={0}
-                p={[10, 10, 20]}
-                fontSize={24}
-                fontWeight={300}
-                href="http://wenweswed.rsvpify.com"
-                target="_blank"
-              >
-                RSVP
-              </TextLink>
-            </ExtendedFlex>
-          </Background>
-        </ExtendedBox>
+              Come celebrate with us!
+          </Text>
+          <TextLink
+            w={[300, 300, 400]}
+            bg="transparent"
+            color="white"
+            transition="0.5s ease-in-out background-color, 0.5s ease-in-out color"
+            textAlign="center"
+            hoverBackgroundColor="white"
+            hoverColor="#F6C98C"
+            border={1}
+            borderColor="white"
+            borderRadius={3}
+            p={[10, 10, 20]}
+            fontSize={24}
+            fontWeight={300}
+            href="http://wenweswed.rsvpify.com"
+            target="_blank"
+          >
+            RSVP
+          </TextLink>
+        </ExtendedFlex>
       </ExtendedFlex>
     );
   }
