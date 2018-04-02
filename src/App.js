@@ -11,6 +11,7 @@ import Hero from './hero/container';
 import LocationTime from './locationTime/container';
 import Rsvp from './rsvp/container';
 import Registry from './registry/container';
+import Recommendations from './recommendations/container';
 import Oreo from './oreo/container';
 
 
@@ -25,6 +26,7 @@ const App = () => {
         <LocationTime />
         <Rsvp />
         <Registry />
+        <Recommendations />
         <Oreo />
       </Flex>
     </ThemeProvider>
