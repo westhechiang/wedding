@@ -3,6 +3,7 @@ import {
   ExtendedBox,
   ExtendedFlex,
   Text,
+  TextLink,
 } from 'www-coreui';
 
 class Recommendations extends React.Component {
@@ -57,10 +58,12 @@ class Recommendations extends React.Component {
             >
               Places to stay:
             </Text>
-            <Text
+            <TextLink
               display="block"
               textAlign="center"
               fontFamily="poiretOne"
+              href="https://www.airbnb.com/s/Palm-Springs--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes&query=Palm%20Springs%2C%20CA%2C%20United%20States&place_id=ChIJs-Xb_9Qa24ARfHntwodp5aE&checkin=2018-11-09&checkout=2018-11-10&children=0&infants=0&adults=2&guests=2&allow_override%5B%5D=&s_tag=Sn-grE_N"
+              hoverColor="white"
               fontSize={[3, 4, 5]}
               m={0}
               w={1}
@@ -68,7 +71,33 @@ class Recommendations extends React.Component {
               pt={10}
             >
               1. AirBnb
-            </Text>
+            </TextLink>
+            <TextLink
+              display="block"
+              textAlign="center"
+              fontFamily="poiretOne"
+              hoverColor="white"
+              fontSize={[3, 4, 5]}
+              m={0}
+              w={1}
+              color="pink.1"
+              pt={10}
+            >
+              2. AirBnb
+            </TextLink>
+            <TextLink
+              display="block"
+              textAlign="center"
+              fontFamily="poiretOne"
+              hoverColor="white"
+              fontSize={[3, 4, 5]}
+              m={0}
+              w={1}
+              color="pink.1"
+              pt={10}
+            >
+              3. AirBnb
+            </TextLink>
           </ExtendedFlex>
 
           <ExtendedBox
@@ -90,6 +119,7 @@ class Recommendations extends React.Component {
               display="block"
               textAlign="center"
               fontFamily="poiretOne"
+              hoverColor="white"
               fontSize={[5, 6, 7]}
               m={0}
               w={1}
@@ -98,9 +128,10 @@ class Recommendations extends React.Component {
             >
               Things to do:
             </Text>
-            <Text
+            <TextLink
               display="block"
               textAlign="center"
+              hoverColor="white"
               fontFamily="poiretOne"
               fontSize={[3, 4, 5]}
               m={0}
@@ -109,7 +140,33 @@ class Recommendations extends React.Component {
               pt={10}
             >
               1. AirBnb
-            </Text>
+            </TextLink>
+            <TextLink
+              display="block"
+              textAlign="center"
+              fontFamily="poiretOne"
+              hoverColor="white"
+              fontSize={[3, 4, 5]}
+              m={0}
+              w={1}
+              color="pink.1"
+              pt={10}
+            >
+              2. AirBnb
+            </TextLink>
+            <TextLink
+              display="block"
+              textAlign="center"
+              fontFamily="poiretOne"
+              fontSize={[3, 4, 5]}
+              hoverColor="white"
+              m={0}
+              w={1}
+              color="pink.1"
+              pt={10}
+            >
+              3. AirBnb
+            </TextLink>
           </ExtendedFlex>
         </ExtendedFlex>
       </ExtendedBox>
