@@ -3,9 +3,9 @@ import {
   ExtendedBox,
   ExtendedFlex,
   Span,
-  Text,
   Image,
 } from 'www-coreui';
+import Body from '../components/Body';
 import calendarIcon from '../assets/images/calendar-icon.svg';
 import mapIcon from '../assets/images/map-icon.svg';
 
@@ -22,18 +22,15 @@ class LocationTime extends React.Component {
         bg="blue.1"
         height={['100vh']}
       >
-        <Text
+        <Body
+          type="B3"
           pt={[60, 100]}
           pb={[120, 80]}
-          display="block"
-          textAlign="center"
-          fontFamily="poiretOne"
-          fontSize={[5, 6, 7]}
           m={0}
           color="pink.1"
         >
           We&#39;re Getting Married!
-        </Text>
+        </Body>
         <ExtendedFlex
           justify="center"
           align="center"
@@ -64,26 +61,19 @@ class LocationTime extends React.Component {
                 borderColor="pink.1"
               />
             </a>
-            <Text
-              display="block"
-              textAlign="center"
-              fontFamily="poiretOne"
+            <Body
+              type="B2"
               color="pink.1"
-              fontSize={[1, 2, 3]}
               m={0}
               mb={40}
               pt={10}
             >
               Add to Calendar
-            </Text>
-            <Text
-              display="block"
-              textAlign="center"
-              fontFamily="poiretOne"
-              fontSize={[5, 6, 7]}
-              m={0}
-              w={1}
+            </Body>
+            <Body
+              type="B1"
               color="pink.1"
+              m={0}
               pt={10}
             >
               November 10
@@ -92,25 +82,22 @@ class LocationTime extends React.Component {
               >
                 th
               </Span>,
-            </Text>
-            <Text
-              display="block"
-              textAlign="center"
-              fontFamily="poiretOne"
-              fontSize={[4, 5, 6]}
+            </Body>
+            <Body
+              type="B1"
               color="pink.1"
               m={0}
               pt={10}
             >
               2018
-            </Text>
+            </Body>
           </ExtendedFlex>
 
           <ExtendedBox
             w={[0.8, 0.8, '1px']}
             my={[80, 80, 20]}
             bg="pink.1"
-            height={['1px', '1px', '400px']}
+            height={['2px', '2px', '400px']}
           />
 
           <ExtendedFlex
@@ -136,40 +123,31 @@ class LocationTime extends React.Component {
                 src={mapIcon}
               />
             </a>
-            <Text
-              display="block"
-              textAlign="center"
-              fontFamily="poiretOne"
+            <Body
+              type="B2"
               color="pink.1"
-              fontSize={[1, 2, 3]}
               m={0}
               mb={40}
               pt={10}
             >
               Get Directions
-            </Text>
-            <Text
-              display="block"
-              textAlign="center"
+            </Body>
+            <Body
+              type="B1"
               color="pink.1"
-              fontFamily="poiretOne"
-              fontSize={[5, 6, 7]}
               m={0}
               pt={10}
             >
               82950 61<Span fontSize={[2, 3, 4]}>st</Span> A<Span fontSize={[2, 3, 4]}>ve.</Span>
-            </Text>
-            <Text
-              display="block"
-              textAlign="center"
-              fontFamily="poiretOne"
+            </Body>
+            <Body
+              type="B1"
               color="pink.1"
-              fontSize={[4, 5, 6]}
               m={0}
               pt={10}
             >
                Vista Santa Rosa, CA 92274
-            </Text>
+            </Body>
           </ExtendedFlex>
         </ExtendedFlex>
       </ExtendedBox>

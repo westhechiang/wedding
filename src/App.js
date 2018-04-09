@@ -25,8 +25,8 @@ const App = () => {
         <Hero />
         <LocationTime />
         <Rsvp />
-        <Registry />
         <Recommendations />
+        <Registry />
         <Oreo />
       </Flex>
     </ThemeProvider>

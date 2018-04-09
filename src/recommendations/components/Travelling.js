@@ -2,8 +2,9 @@ import React from 'react';
 import {
   ExtendedFlex,
   TextLink,
-  Text,
 } from 'www-coreui';
+
+import Body from '../../components/Body';
 
 const Travelling = () => {
   return (
@@ -15,25 +16,22 @@ const Travelling = () => {
       align="center"
       flexDirection="column"
     >
-      <Text
-        display="block"
-        textAlign="center"
-        fontFamily="poiretOne"
+      <Body
+        type="B1"
         hoverColor="white"
-        fontSize={[5, 6, 7]}
         m={0}
         w={1}
         color="pink.1"
         pt={10}
       >
-        Travelling:
-      </Text>
+       Travelling:
+      </Body>
       <TextLink
         display="block"
         textAlign="center"
         hoverColor="white"
         fontFamily="poiretOne"
-        fontSize={[3, 4, 5]}
+        fontSize={[2, 3, 4]}
         href="https://www.tripadvisor.com/Attraction_Review-g32847-d104111-Reviews-Palm_Springs_Aerial_Tramway-Palm_Springs_Greater_Palm_Springs_California.html"
         m={0}
         w={1}
@@ -47,7 +45,7 @@ const Travelling = () => {
         textAlign="center"
         fontFamily="poiretOne"
         hoverColor="white"
-        fontSize={[3, 4, 5]}
+        fontSize={[2, 3, 4]}
         m={0}
         w={1}
         color="pink.1"
@@ -59,7 +57,7 @@ const Travelling = () => {
         display="block"
         textAlign="center"
         fontFamily="poiretOne"
-        fontSize={[3, 4, 5]}
+        fontSize={[2, 3, 4]}
         hoverColor="white"
         m={0}
         w={1}

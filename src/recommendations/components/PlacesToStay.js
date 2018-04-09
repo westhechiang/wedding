@@ -2,8 +2,9 @@ import React from 'react';
 import {
   ExtendedFlex,
   TextLink,
-  Text,
 } from 'www-coreui';
+
+import Body from '../../components/Body';
 
 const PlacesToStay = () => {
   return (
@@ -15,25 +16,23 @@ const PlacesToStay = () => {
       align="center"
       flexDirection="column"
     >
-      <Text
-        display="block"
-        textAlign="center"
-        fontFamily="poiretOne"
-        fontSize={[5, 6, 7]}
+      <Body
+        type="B1"
+        hoverColor="white"
         m={0}
         w={1}
         color="pink.1"
         pt={10}
       >
         Places to stay:
-      </Text>
+      </Body>
       <TextLink
         display="block"
         textAlign="center"
         fontFamily="poiretOne"
         href="https://www.airbnb.com/s/Palm-Springs--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes&query=Palm%20Springs%2C%20CA%2C%20United%20States&place_id=ChIJs-Xb_9Qa24ARfHntwodp5aE&checkin=2018-11-09&checkout=2018-11-10&children=0&infants=0&adults=2&guests=2&allow_override%5B%5D=&s_tag=Sn-grE_N"
         hoverColor="white"
-        fontSize={[3, 4, 5]}
+        fontSize={[2, 3, 4]}
         m={0}
         w={1}
         color="pink.1"
@@ -46,7 +45,7 @@ const PlacesToStay = () => {
         textAlign="center"
         fontFamily="poiretOne"
         hoverColor="white"
-        fontSize={[3, 4, 5]}
+        fontSize={[2, 3, 4]}
         m={0}
         w={1}
         color="pink.1"
@@ -59,13 +58,13 @@ const PlacesToStay = () => {
         textAlign="center"
         fontFamily="poiretOne"
         hoverColor="white"
-        fontSize={[3, 4, 5]}
+        fontSize={[2, 3, 4]}
         m={0}
         w={1}
         color="pink.1"
         pt={10}
       >
-        3. Cheaper Hotel
+        3. Polo Villas
       </TextLink>
     </ExtendedFlex>
   );

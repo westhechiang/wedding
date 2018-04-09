@@ -2,11 +2,12 @@ import React from 'react';
 import {
   ExtendedBox,
   ExtendedFlex,
-  Text,
   TextLink,
 } from 'www-coreui';
 
-import celebrate from '../assets/images/celebrate.png';
+import Body from '../components/Body';
+
+import celebrate from '../assets/images/flamingos.png';
 import bgImage from '../assets/images/cops_and_robbers1.jpg';
 
 class Rsvp extends React.Component {
@@ -51,16 +52,15 @@ class Rsvp extends React.Component {
           justify="center"
           align={['center', 'center', 'flex-start']}
         >
-          <Text
-            color="blue.1"
-            fontFamily="poiretOne"
+          <Body
+            type="B3"
+            color="pink.0"
             fontWeight={[900]}
-            fontSize={[5, 6, 7]}
             m={0}
             mb={[40, 40, 60]}
           >
               Come celebrate with us!
-          </Text>
+          </Body>
           <TextLink
             w={[300, 300, 400]}
             bg="transparent"
