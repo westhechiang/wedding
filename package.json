@@ -49,7 +49,7 @@
     "webpack-dev-server": "2.9.4",
     "webpack-manifest-plugin": "1.3.2",
     "whatwg-fetch": "2.0.3",
-    "www-coreui": "0.1.0"
+    "www-coreui": "0.1.1"
   },
   "scripts": {
     "start": "node scripts/start.js",

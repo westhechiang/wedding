@@ -8408,9 +8408,9 @@ write@^0.2.1:
   dependencies:
     mkdirp "^0.5.1"
 
-www-coreui@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/www-coreui/-/www-coreui-0.1.0.tgz#ff9e684924aae639241b4e15063d841009c3ca49"
+www-coreui@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/www-coreui/-/www-coreui-0.1.1.tgz#8112a1a81ff7b52695a6d29b1efec65650130ae2"
   dependencies:
     "@storybook/addon-actions" "^3.3.11"
     "@storybook/addon-links" "^3.3.11"
