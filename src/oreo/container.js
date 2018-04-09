@@ -24,7 +24,7 @@ class Oreo extends React.Component {
       >
         <Image
           src={OreoImage}
-          w={[1, 500]}
+          w={[1, 400]}
         />
       </ExtendedFlex>
     );

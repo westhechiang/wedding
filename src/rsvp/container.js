@@ -27,13 +27,13 @@ class Rsvp extends React.Component {
         py={[80, 40, 0]}
       >
         <ExtendedFlex
-          w={1}
-          justify="center"
+          w={[1, 1, 0.40]}
+          justify={['center', 'center', 'flex-end']}
           align="center"
         >
           <ExtendedBox
-            w={[300, 400, 600]}
-            height={[300, 400, 600]}
+            w={[300, 350, 400]}
+            height={[300, 350, 400]}
             border={3}
             borderRadius={4}
             bgImage={bgImage}
@@ -46,11 +46,11 @@ class Rsvp extends React.Component {
           />
         </ExtendedFlex>
         <ExtendedFlex
-          w={1}
+          w={[1, 1, 0.60]}
           height={[400, 400, '100vh']}
           flexDirection="column"
           justify="center"
-          align={['center', 'center', 'flex-start']}
+          align={['center', 'center', 'center']}
         >
           <Body
             type="B3"

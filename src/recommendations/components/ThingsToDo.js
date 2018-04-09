@@ -9,8 +9,8 @@ import Body from '../../components/Body';
 const ThingsToDo = () => {
   return (
     <ExtendedFlex
-      w={[1, 1, 0.5]}
-      pl={[0, 0, 10]}
+      w={[1, 1, 0.33]}
+      px={20}
       py={[10, 10, 10]}
       justify="center"
       align="center"
@@ -22,7 +22,7 @@ const ThingsToDo = () => {
         m={0}
         w={1}
         color="pink.1"
-        pt={10}
+        py={10}
       >
         Things to do:
       </Body>

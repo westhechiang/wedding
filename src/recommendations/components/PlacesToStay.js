@@ -10,10 +10,8 @@ const PlacesToStay = () => {
   return (
     <ExtendedFlex
       w={[1, 1, 0.5]}
-      pr={[0, 0, 10]}
+      px={[20, 40]}
       py={[10, 10, 10]}
-      justify="center"
-      align="center"
       flexDirection="column"
     >
       <Body
@@ -21,51 +19,140 @@ const PlacesToStay = () => {
         hoverColor="white"
         m={0}
         w={1}
+        textAlign="center"
         color="pink.1"
-        pt={10}
+        pb={20}
       >
         Places to stay:
       </Body>
-      <TextLink
-        display="block"
-        textAlign="center"
-        fontFamily="poiretOne"
-        href="https://www.airbnb.com/s/Palm-Springs--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes&query=Palm%20Springs%2C%20CA%2C%20United%20States&place_id=ChIJs-Xb_9Qa24ARfHntwodp5aE&checkin=2018-11-09&checkout=2018-11-10&children=0&infants=0&adults=2&guests=2&allow_override%5B%5D=&s_tag=Sn-grE_N"
-        hoverColor="white"
-        fontSize={[2, 3, 4]}
-        m={0}
+      <ExtendedFlex
+        flexDirection="column"
+        align="flex-start"
+        pb={20}
         w={1}
-        color="pink.1"
-        pt={10}
       >
-        1. AirBnb
-      </TextLink>
-      <TextLink
-        display="block"
-        textAlign="center"
-        fontFamily="poiretOne"
-        hoverColor="white"
-        fontSize={[2, 3, 4]}
-        m={0}
+        <Body
+          type="B4"
+          fontSize={[2, 3, 4]}
+          fontWeight={700}
+          textAlign="center"
+          textTransform="uppercase"
+          m={0}
+          color="pink.1"
+          py={10}
+        >
+          Polo Villas
+        </Body>
+        <Body
+          type="B2"
+          m={0}
+          color="pink.1"
+        >
+          We&#39;ve reserved 2
+          <TextLink
+            color="pink.1"
+            href="https://www.mclean.company/vacation-rentals/polo-villas/"
+            fontFamily="poiretOne"
+            textDecoration="underline"
+            hoverColor="pink"
+            transition="color 0.5s linear"
+            fontWeight={700}
+            ml={2}
+          >
+            5-bedroom houses
+          </TextLink> adjacent to the wedding venue.
+          <TextLink
+            color="pink.1"
+            href="#"
+            fontFamily="poiretOne"
+            textDecoration="underline"
+            fontWeight={700}
+            hoverColor="pink"
+            transition="color 0.5s linear"
+            ml={2}
+          >
+            Fill out this google sheet
+          </TextLink>, and
+          Venmo us (@wchiang) to secure your spot.
+        </Body>
+      </ExtendedFlex>
+
+      <ExtendedFlex
+        flexDirection="column"
+        align="flex-start"
+        pb={20}
         w={1}
-        color="pink.1"
-        pt={10}
       >
-        2. La Quinta
-      </TextLink>
-      <TextLink
-        display="block"
-        textAlign="center"
-        fontFamily="poiretOne"
-        hoverColor="white"
-        fontSize={[2, 3, 4]}
-        m={0}
+        <Body
+          type="B4"
+          fontSize={[2, 3, 4]}
+          fontWeight={700}
+          textTransform="uppercase"
+          m={0}
+          color="pink.1"
+          py={10}
+        >
+          La Quinta
+        </Body>
+        <Body
+          type="B2"
+          m={0}
+          color="pink.1"
+        >
+          <TextLink
+            fontFamily="poiretOne"
+            textDecoration="underline"
+            color="pink.1"
+            href="#"
+            hoverColor="pink"
+            transition="color 0.5s linear"
+            mr={2}
+            fontWeight={700}
+          >
+            Nearest major hotel
+          </TextLink>
+          near the wedding venue (~4.2 miles / 8 min).
+          Highly recommend booking early.
+        </Body>
+      </ExtendedFlex>
+
+      <ExtendedFlex
+        flexDirection="column"
+        align="flex-start"
+        pb={20}
         w={1}
-        color="pink.1"
-        pt={10}
       >
-        3. Polo Villas
-      </TextLink>
+        <Body
+          type="B4"
+          fontSize={[2, 3, 4]}
+          fontWeight={700}
+          textTransform="uppercase"
+          m={0}
+          color="pink.1"
+          py={10}
+        >
+          AirBnb
+        </Body>
+        <Body
+          type="B2"
+          m={0}
+          color="pink.1"
+        >
+          Palm Springs is known to have a great selection of
+          <TextLink
+            ml={2}
+            fontFamily="poiretOne"
+            textDecoration="underline"
+            color="pink.1"
+            hoverColor="pink"
+            transition="color 0.5s linear"
+            href="https://bit.ly/2qdvINo"
+            fontWeight={700}
+          >
+            awesome AirBnbs
+          </TextLink>,
+        </Body>
+      </ExtendedFlex>
     </ExtendedFlex>
   );
 };

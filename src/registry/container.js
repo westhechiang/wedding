@@ -5,6 +5,8 @@ import {
   TextLink,
 } from 'www-coreui';
 
+import Body from '../components/Body';
+
 import bgImage from '../assets/images/palms.jpg';
 import image from '../assets/images/swept.jpg';
 
@@ -25,7 +27,7 @@ class Registry extends React.Component {
         py={[80, 40, 0]}
       >
         <ExtendedFlex
-          w={1}
+          w={[1, 1, 0.60]}
           height={[400, 400, '100vh']}
           flexDirection="column"
           justify="center"
@@ -38,6 +40,15 @@ class Registry extends React.Component {
             align={['center', 'center', 'flex-end']}
             flexDirection="column"
           >
+            <Body
+              type="B3"
+              color="pink.0"
+              fontWeight={[900]}
+              m={0}
+              mb={[40, 40, 60]}
+            >
+              Wedding Gifts
+            </Body>
             <TextLink
               width={[300, 300, 400]}
               color="white"
@@ -55,18 +66,18 @@ class Registry extends React.Component {
               href="https://www.myregistry.com/giftlist/wenweswed"
               target="_blank"
             >
-              Registry
+              Our Registry
             </TextLink>
           </ExtendedFlex>
         </ExtendedFlex>
         <ExtendedFlex
-          w={[1]}
-          justify="center"
+          w={[1, 1, 0.40]}
+          justify={['center', 'center', 'flex-start']}
           align="center"
         >
           <ExtendedBox
-            w={[300, 400, 600]}
-            height={[300, 400, 600]}
+            w={[300, 350, 400]}
+            height={[300, 350, 400]}
             border={3}
             borderRadius={4}
             bgImage={image}

@@ -5,7 +5,10 @@ import {
   Span,
   Image,
 } from 'www-coreui';
+
 import Body from '../components/Body';
+import ResponsiveLine from '../components/ResponsiveLine';
+
 import calendarIcon from '../assets/images/calendar-icon.svg';
 import mapIcon from '../assets/images/map-icon.svg';
 
@@ -25,6 +28,7 @@ class LocationTime extends React.Component {
         <Body
           type="B3"
           pt={[60, 100]}
+          textAlign="center"
           pb={[120, 80]}
           m={0}
           color="pink.1"
@@ -92,14 +96,7 @@ class LocationTime extends React.Component {
               2018
             </Body>
           </ExtendedFlex>
-
-          <ExtendedBox
-            w={[0.8, 0.8, '1px']}
-            my={[80, 80, 20]}
-            bg="pink.1"
-            height={['2px', '2px', '400px']}
-          />
-
+          <ResponsiveLine />
           <ExtendedFlex
             w={[1, 1, 0.5]}
             pl={[0, 0, 10]}
@@ -109,7 +106,7 @@ class LocationTime extends React.Component {
             flexDirection="column"
           >
             <a
-              href="https://goo.gl/maps/ouRYNHu7AF12"
+              href="https://goo.gl/maps/pJEjbPzGbZG2"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -138,7 +135,7 @@ class LocationTime extends React.Component {
               m={0}
               pt={10}
             >
-              82950 61<Span fontSize={[2, 3, 4]}>st</Span> A<Span fontSize={[2, 3, 4]}>ve.</Span>
+              51205 Evangeline Way
             </Body>
             <Body
               type="B1"
@@ -146,7 +143,7 @@ class LocationTime extends React.Component {
               m={0}
               pt={10}
             >
-               Vista Santa Rosa, CA 92274
+              La Quinta, CA 92253
             </Body>
           </ExtendedFlex>
         </ExtendedFlex>

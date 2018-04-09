@@ -8,21 +8,23 @@ import {
 export const types = {
   B1: {
     display: 'block',
-    textAlign: 'center',
     fontFamily: 'poiretOne',
     fontSize: [4, 5, 6],
   },
   B2: {
     display: 'block',
-    textAlign: 'center',
     fontFamily: 'poiretOne',
     fontSize: [1, 2, 3],
   },
   B3: {
     display: 'block',
-    textAlign: 'center',
     fontFamily: 'poiretOne',
     fontSize: [5, 6, 7],
+  },
+  B4: {
+    display: 'block',
+    fontFamily: 'poiretOne',
+    fontSize: [2, 3, 4],
   },
 };
 

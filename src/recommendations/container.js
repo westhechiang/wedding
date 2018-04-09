@@ -5,7 +5,6 @@ import {
 } from 'www-coreui';
 
 import PlacesToStay from './components/PlacesToStay';
-import ThingsToDo from './components/ThingsToDo';
 import Travelling from './components/Travelling';
 
 import Body from '../components/Body';
@@ -27,22 +26,19 @@ class Recommendations extends React.Component {
       >
         <Body
           type="B3"
+          textAlign="center"
           pt={[60, 100]}
-          pb={[120, 80]}
+          pb={[80]}
           m={0}
           color="pink.1"
         >
           Recommendations
         </Body>
         <ExtendedFlex
-          justify="center"
-          align="center"
           flexDirection={['column', 'column', 'row']}
           w={1}
         >
           <PlacesToStay />
-          <ResponsiveLine />
-          <ThingsToDo />
           <ResponsiveLine />
           <Travelling />
         </ExtendedFlex>
