@@ -9,8 +9,8 @@ const ResponsiveLine = ({
 }) => {
   return (
     <ExtendedBox
-      w={[0.8, 0.8, '1px']}
-      my={[60, 60, 20]}
+      w={[1, 1, '1px']}
+      my={[60, 60, 0]}
       bg="pink.1"
       height={['1px', '1px', desktopHeight]}
     />
@@ -22,7 +22,7 @@ ResponsiveLine.propTypes = {
 };
 
 ResponsiveLine.defaultProps = {
-  desktopHeight: '400px',
+  desktopHeight: '350px',
 };
 
 export default ResponsiveLine;

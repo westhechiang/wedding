@@ -2,10 +2,10 @@ import React from 'react';
 import {
   ExtendedFlex,
   ExtendedBox,
-  TextLink,
 } from 'www-coreui';
 
 import Body from '../components/Body';
+import Button from '../components/Button';
 
 import bgImage from '../assets/images/palms.jpg';
 import image from '../assets/images/swept.jpg';
@@ -49,25 +49,11 @@ class Registry extends React.Component {
             >
               Wedding Gifts
             </Body>
-            <TextLink
-              width={[300, 300, 400]}
-              color="white"
-              transition="0.5s ease-in-out background-color, 0.5s ease-in-out color"
-              hoverBackgroundColor="white"
-              backgroundColor="transparent"
-              hoverColor="black"
-              textAlign="center"
-              border={1}
-              borderColor="white"
-              borderRadius={3}
-              p={[10, 10, 20]}
-              fontSize={24}
-              fontWeight={300}
+            <Button
               href="https://www.myregistry.com/giftlist/wenweswed"
-              target="_blank"
             >
               Our Registry
-            </TextLink>
+            </Button>
           </ExtendedFlex>
         </ExtendedFlex>
         <ExtendedFlex

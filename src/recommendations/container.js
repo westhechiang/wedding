@@ -39,7 +39,9 @@ class Recommendations extends React.Component {
           w={1}
         >
           <PlacesToStay />
-          <ResponsiveLine />
+          <ResponsiveLine
+            desktopHeight="400px"
+          />
           <Travelling />
         </ExtendedFlex>
       </ExtendedBox>

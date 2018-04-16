@@ -23,7 +23,7 @@ class LocationTime extends React.Component {
       <ExtendedBox
         px={[20, 40]}
         bg="blue.1"
-        height={['100vh']}
+        height={['auto', 'auto', '100vh']}
       >
         <Body
           type="B3"
@@ -37,7 +37,7 @@ class LocationTime extends React.Component {
         </Body>
         <ExtendedFlex
           justify="center"
-          align="center"
+          align={['center', 'center', 'flex-start']}
           flexDirection={['column', 'column', 'row']}
           w={1}
           height="60%"
@@ -51,7 +51,7 @@ class LocationTime extends React.Component {
             flexDirection="column"
           >
             <a
-              href="https://www.google.com/calendar/render?action=TEMPLATE&text=WenWesWed&dates=20181110T150000/20181110T235900&ctz=America/Los_Angeles&details=For+details,+link+here:+http://www.wenweswed.com&location=82950+61st.+Ave.,+Vista+Santa+Rosa+CA+92274&sf=true&output=xml"
+              href="https://www.google.com/calendar/render?action=TEMPLATE&text=WenWesWed2018&dates=20181110T150000/20181110T230000&ctz=America/Los_Angeles&details=For+details,+link+here:+http://www.wenweswed.com&location=51205+Evangeline+Way,+La+Quinta.+CA+92253&sf=true&output=xml"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,12 +80,7 @@ class LocationTime extends React.Component {
               m={0}
               pt={10}
             >
-              November 10
-              <Span
-                fontSize={[2, 3, 4]}
-              >
-                th
-              </Span>,
+              3:00pm
             </Body>
             <Body
               type="B1"
@@ -93,6 +88,13 @@ class LocationTime extends React.Component {
               m={0}
               pt={10}
             >
+              November 10
+              <Span
+                fontSize={[2, 3, 4]}
+                fontWeight="300"
+              >
+                th
+              </Span>,
               2018
             </Body>
           </ExtendedFlex>
@@ -100,7 +102,7 @@ class LocationTime extends React.Component {
           <ExtendedFlex
             w={[1, 1, 0.5]}
             pl={[0, 0, 10]}
-            py={[10, 10, 10]}
+            py={[40, 40, 10]}
             justify="center"
             align="center"
             flexDirection="column"
@@ -128,6 +130,14 @@ class LocationTime extends React.Component {
               pt={10}
             >
               Get Directions
+            </Body>
+            <Body
+              type="B1"
+              color="pink.1"
+              m={0}
+              pt={10}
+            >
+              Polo Villas
             </Body>
             <Body
               type="B1"

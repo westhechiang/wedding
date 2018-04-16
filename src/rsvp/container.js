@@ -2,10 +2,10 @@ import React from 'react';
 import {
   ExtendedBox,
   ExtendedFlex,
-  TextLink,
 } from 'www-coreui';
 
 import Body from '../components/Body';
+import Button from '../components/Button';
 
 import celebrate from '../assets/images/flamingos.png';
 import bgImage from '../assets/images/cops_and_robbers1.jpg';
@@ -61,25 +61,11 @@ class Rsvp extends React.Component {
           >
               Come celebrate with us!
           </Body>
-          <TextLink
-            w={[300, 300, 400]}
-            bg="transparent"
-            color="white"
-            transition="0.5s ease-in-out background-color, 0.5s ease-in-out color"
-            textAlign="center"
-            hoverBackgroundColor="white"
-            hoverColor="#F6C98C"
-            border={1}
-            borderColor="white"
-            borderRadius={3}
-            p={[10, 10, 20]}
-            fontSize={24}
-            fontWeight={300}
+          <Button
             href="http://wenweswed.rsvpify.com"
-            target="_blank"
           >
             RSVP
-          </TextLink>
+          </Button>
         </ExtendedFlex>
       </ExtendedFlex>
     );
