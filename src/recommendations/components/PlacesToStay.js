@@ -104,7 +104,7 @@ const PlacesToStay = () => {
           </TextLink> adjacent to the wedding venue.
           <TextLink
             color="pink.1"
-            href="#"
+            href="https://docs.google.com/spreadsheets/d/1Hw5WBzIumNflW2zwUNDY4iY1Y0cVdmN0ony89O-zh4I/edit?usp=sharing"
             fontFamily="poiretOne"
             textDecoration="underline"
             target="_blank"
