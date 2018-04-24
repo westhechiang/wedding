@@ -59,7 +59,7 @@ class Rsvp extends React.Component {
             m={0}
             mb={[40, 40, 60]}
           >
-              Come celebrate with us!
+            Celebrate with us!
           </Body>
           <Button
             href="http://wenweswed.rsvpify.com"
