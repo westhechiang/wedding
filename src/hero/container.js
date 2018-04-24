@@ -4,11 +4,8 @@ import {
   ExtendedFlex,
   Background,
   Text,
-} from 'www-coreui';
-
-import {
   Box,
-} from 'grid-styled';
+} from 'www-coreui';
 
 import bgImage from '../assets/images/floral_bg_sm.jpg';
 

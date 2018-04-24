@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  ThemeProvider,
-} from 'styled-components';
-import { Theme } from 'www-coreui';
-import {
-  Flex,
-} from 'grid-styled';
+import { Theme, ThemeProvider, Flex } from 'www-coreui';
 
 import Hero from './hero/container';
 import LocationTime from './locationTime/container';
