@@ -7,7 +7,7 @@ import {
 import Body from '../components/Body';
 import Button from '../components/Button';
 
-import celebrate from '../assets/images/flamingos.png';
+import celebrate from '../assets/images/flamingos.jpg';
 import bgImage from '../assets/images/cops_and_robbers1.jpg';
 
 class Rsvp extends React.Component {
