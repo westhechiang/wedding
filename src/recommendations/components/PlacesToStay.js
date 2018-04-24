@@ -145,7 +145,7 @@ const PlacesToStay = () => {
             fontFamily="poiretOne"
             textDecoration="underline"
             color="pink.1"
-            href="#"
+            href="https://secure3.hilton.com/en_US/wa/reservation/book.htm?arrival=2018-11-9&departure=2018-11-11&ctyhocn=PSPLQWA&inputModule=HOTEL_SEARCH&res_submit=Check+Rates"
             hoverColor="pink"
             target="_blank"
             transition="color 0.5s linear"
