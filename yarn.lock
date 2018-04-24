@@ -7605,19 +7605,6 @@ styled-components@^1.0.0:
     prop-types "^15.5.4"
     supports-color "^3.1.2"
 
-styled-components@^2.2.4:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-2.4.0.tgz#086d0fd483d54638837fca3ea546a030b94adf75"
-  dependencies:
-    buffer "^5.0.3"
-    css-to-react-native "^2.0.3"
-    fbjs "^0.8.9"
-    hoist-non-react-statics "^1.2.0"
-    is-plain-object "^2.0.1"
-    prop-types "^15.5.4"
-    stylis "^3.4.0"
-    supports-color "^3.2.3"
-
 styled-grid@^1.0.0-beta.1:
   version "1.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/styled-grid/-/styled-grid-1.0.0-beta.1.tgz#a5ef3d5983424f678da6c0d814956357cb2db2a2"
