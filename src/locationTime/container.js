@@ -51,7 +51,7 @@ class LocationTime extends React.Component {
             flexDirection="column"
           >
             <a
-              href="https://www.google.com/calendar/render?action=TEMPLATE&text=WenWesWed2018&dates=20181110T150000/20181110T230000&ctz=America/Los_Angeles&details=For+details,+link+here:+http://www.wenweswed.com&location=51205+Evangeline+Way,+La+Quinta.+CA+92253&sf=true&output=xml"
+              href="https://www.google.com/calendar/render?action=TEMPLATE&text=WenWesWed2018&dates=20181110T160000/20181110T230000&ctz=America/Los_Angeles&details=For+details,+link+here:+http://www.wenweswed.com&location=51205+Evangeline+Way,+La+Quinta.+CA+92253&sf=true&output=xml"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,7 +80,15 @@ class LocationTime extends React.Component {
               m={0}
               pt={10}
             >
-              3:00pm
+              Event begins at 4:00pm
+            </Body>
+            <Body
+              type="B1"
+              color="pink.1"
+              m={0}
+              pt={10}
+            >
+              Ceremony starts at 4:30pm
             </Body>
             <Body
               type="B1"
