@@ -115,7 +115,7 @@ const PlacesToStay = () => {
           >
             Fill out this google sheet
           </TextLink>, and
-          Venmo us (@wchiang) to secure your spot.
+          Venmo us (@wesley-chiang) to secure your spot.
         </Body>
       </ExtendedFlex>
 
